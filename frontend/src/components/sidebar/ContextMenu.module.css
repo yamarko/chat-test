@@ -1,0 +1,56 @@
+.contextMenu {
+    position: absolute;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    min-width: 150px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.contextMenuItem {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    color: #ccc;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contextMenuItem:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.contextMenuItemDelete {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    color: #f44336;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contextMenuItemDelete:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.contextMenuItem:active, .contextMenuItemDelete:active {
+    background-color: #555;
+}
+
+.contextMenuItem + .contextMenuItem {
+    margin-top: 5px;
+}
+
+.contextMenuItemDelete + .contextMenuItemDelete {
+    margin-top: 5px;
+}
